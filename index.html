@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="render()">
+    <head>
+      <nav class="navbar">
+        <a href="bin.html"><img src="./assets/img/delete.png" alt="Bin" /></a>
+      </nav>
+      <h1>Notizblock</h1>
+    </head>
+    <div class="maincontainer">
+      <div class="inputSection">
+        <input type="text" placeholder="Titel" id="title" required /> <br />
+        <textarea
+          aria-multiline="true"
+          type="text"
+          placeholder="Notiz Schreiben ..."
+          id="note"
+          rows="2"
+        ></textarea
+        ><br />
+        <button class="add" onclick="Post()">Erstellen</button>
+      </div>
+    </div>
+    <p class="headline">Meine To Do´s</p>
+    <div id="newNotes" class="newNotes"></div>
+  </body>
+</html>

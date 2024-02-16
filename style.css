@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(./assets/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Caveat-Bold;
+  src: url(./assets/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Caveat-Medium;
+  src: url(./assets/fonts/Caveat-Medium.ttf);
+}
+@font-face {
+  font-family: Caveat-SemiBold;
+  src: url(./assets/fonts/Caveat-SemiBold.ttf);
+}
+* {
+  font-family: Caveat-Regular;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  margin: 16px;
+}
+h1 {
+  text-align: center;
+  font-family: Caveat-Bold;
+  font-size: 4rem;
+  text-decoration: underline;
+  padding-bottom: 48px;
+}
+
+.navbar {
+  width: 88vw;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  margin: 0;
+}
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  background-color: rgba(255, 255, 255, 0.555);
+  box-shadow: -2px 0px 6px 0px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 600px;
+  border-radius: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+input {
+  border: none;
+  height: 16px;
+  margin: 0;
+  font-size: 16px;
+}
+textarea {
+  border: none;
+  margin: 0;
+  font-size: 16px;
+  font-family: Caveat-Bold;
+  word-break: break-word;
+  overflow: show;
+  white-space: pre-wrap;
+  white-space-collapse: preserve;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+}
+.add {
+  background-color: white;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+.add:hover {
+  cursor: pointer;
+}
+.newNotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.note {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border-radius: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  box-shadow: -5px 0px 6px 0px rgba(87, 82, 82, 0.3);
+  background-color: rgba(238, 211, 170, 0.205);
+  color: aliceblue;
+  min-width: 250px;
+  width: 400px;
+  word-break: break-word;
+  overflow: show;
+  white-space: pre-wrap;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+}
+.delete {
+  height: 24px;
+  width: 250px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: aliceblue;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.date {
+  color: gray;
+  font-size: 14px;
+  margin-top: 0;
+}
+.headline {
+  display: flex;
+  text-decoration: underline;
+  font-size: 32px;
+  padding-left: 32px;
+  justify-content: center;
+  padding-bottom: 12px;
+}
